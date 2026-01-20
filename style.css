@@ -29,3 +29,12 @@ footer {
   font-size: 14px;
   opacity: 0.7;
 }
+nav a {
+  color: #93c5fd;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
