@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // Reveal sections on scroll
   const sections = document.querySelectorAll("section");
 
   const reveal = () => {
@@ -11,10 +12,14 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   window.addEventListener("scroll", reveal);
-  reveal(); // run once on load
+  reveal();
 
+  // Theme toggle (SAFE)
   const button = document.getElementById("toggle-theme");
-  button.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-  });
+
+  if (button) {
+    button.addEventListener("click", () => {
+      document.body.classList.toggle("light-mode");
+    });
+  }
 });
