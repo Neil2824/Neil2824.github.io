@@ -38,3 +38,20 @@ nav a {
 nav a:hover {
   text-decoration: underline;
 }
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+.light-mode {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
